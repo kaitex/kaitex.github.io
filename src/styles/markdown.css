@@ -1,0 +1,140 @@
+:root {
+  --bg: #1d2021;
+  --fg: #ebdbb2;
+  --orange: #fe8019;
+  --orange-hover: #fabd2f;
+  --gray: #928374;
+  --gray-dark: #3c3836;
+  --gray-light: #a89984;
+}
+
+/* Base prose styles */
+.prose-enhanced {
+  max-width: none;
+  padding: 1rem;
+  color: var(--fg);
+  background-color: var(--bg);
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+/* Headings */
+.prose-enhanced h1 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--orange);
+}
+.prose-enhanced h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--gray-light);
+}
+.prose-enhanced h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--gray);
+}
+
+/* Paragraphs */
+.prose-enhanced p {
+  margin-bottom: 1rem;
+  color: var(--fg);
+}
+
+/* Lists */
+.prose-enhanced ul,
+.prose-enhanced ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.prose-enhanced li {
+  margin-bottom: 0.5rem;
+  color: var(--fg);
+}
+
+/* Blockquote */
+.prose-enhanced blockquote {
+  border-left: 4px solid var(--orange);
+  padding-left: 1rem;
+  font-style: italic;
+  margin: 1rem 0;
+  color: var(--gray);
+}
+
+/* Code
+.prose-enhanced code {
+  background-color: var(--gray-dark);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.875rem;
+} */
+
+/* Preformatted blocks */
+.prose-enhanced pre {
+  background-color: var(--gray-dark);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+  color: var(--fg);
+}
+.prose-enhanced pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Links */
+.prose-enhanced a {
+  color: var(--orange);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+.prose-enhanced a:hover {
+  color: var(--orange-hover);
+  border-bottom-color: var(--orange-hover);
+}
+/* .prose-enhanced code{
+  background-color:#504945 ;
+  color:#7daea3;
+} */
+
+/* Tables */
+.prose-enhanced table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.prose-enhanced th,
+.prose-enhanced td {
+  border: 1px solid var(--gray-light);
+  padding: 0.5rem 1rem;
+}
+.prose-enhanced th {
+  background-color: var(--gray-dark);
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .prose-enhanced {
+    padding: 1rem;
+  }
+  .prose-enhanced h1 {
+    font-size: 1.5rem;
+  }
+  .prose-enhanced h2 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .prose-enhanced {
+    padding: 0.5rem;
+  }
+}
