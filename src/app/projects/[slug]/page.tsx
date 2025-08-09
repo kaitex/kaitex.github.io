@@ -1,24 +1,32 @@
-import { getPostBySlug } from "@/lib/mdx";
+import { getAllPosts, getPostBySlug } from "@/lib/mdx";
 import { notFound } from "next/navigation";
 import { marked } from "marked";
 
-interface PageProps {
+type Props = {
   params: Promise<{ slug: string }>;
+};
+
+export async function generateStaticParams() {
+  const posts = getAllPosts("projects");
+  return posts.map((post) => ({
+    slug: post.frontmatter.slug,
+  }));
 }
 
-export default async function BlogPostPage({ params }: PageProps) {
+export default async function ProjectPage({ params }: Props) {
   const { slug } = await params;
+
   const post = getPostBySlug("projects", slug);
-  if (!post) return notFound();
+
+  if (!post) notFound();
+
+  // Await parse to get string HTML (marked.parse returns Promise<string>)
+  const htmlContent = await marked.parse(post.content);
 
   return (
-    <div className="mt-20">
-      <h1 className="text-2xl font-bold mb-2">{post.frontmatter.title}</h1>
-      <div className="text-sm text-gray-500 mb-4">{post.frontmatter.date}</div>
-      <article
-        className="prose max-w-none"
-        dangerouslySetInnerHTML={{ __html: await marked.parse(post.content) }}
-      />
-    </div>
+    <article className="prose dark:prose-invert max-w-none mx-auto p-4">
+      <h1>{post.frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+    </article>
   );
 }
