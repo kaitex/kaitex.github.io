@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="">
+      <body className="max-w-5xl py-5 mx-auto px-10 sm:px-20">
         <ThemeProvider>
           <Navbar />
           <main>{children}</main>

@@ -3,7 +3,7 @@ import TechStack from "@/components/TechStack";
 
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="">
   <Hero/>
   <TechStack/>
     </div>

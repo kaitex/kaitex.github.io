@@ -9,7 +9,7 @@ export default function BlogPostPage({ params }: Props) {
   if (!post) return notFound();
 
   return (
-    <div>
+    <div className="mt-20">
       <h1 className="text-2xl font-bold mb-2">{post.frontmatter.title}</h1>
       <div className="text-sm text-gray-500 mb-4">{post.frontmatter.date}</div>
       <article

@@ -11,10 +11,10 @@ export default function ProjectsPage() {
       <h2 className="text-3xl font-medium mb-4">
         Projects<span>.</span>
       </h2>
-      <p className="mb-1">
+      <p className="mb-1 text-2xl">
         These are my open source projects which are fetched directly from GitHub.
       </p>
-      <p>If you're a developer, feel free to make a pull request!</p>
+      <p className="text-xl">If you're a developer, feel free to make a pull request!</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
         {posts.map(({ frontmatter }) => (
@@ -23,11 +23,11 @@ export default function ProjectsPage() {
             className="border border-gray-700 rounded-md p-4 hover:shadow transition-shadow duration-300"
           >
             <div className="flex items-center mb-2">
-              <FaBook className="mr-2" />
-              <h3 className="text-lg font-semibold">{frontmatter.title}</h3>
+            
+              <h3 className="text-lg ">{frontmatter.title}</h3>
             </div>
 
-            <p className="text-sm mb-4">{frontmatter.description}</p>
+            <p className="text-md mb-4">{frontmatter.description}</p>
 
             <div className="flex flex-wrap items-center justify-between text-sm gap-2">
               <span className="flex items-center">
@@ -40,28 +40,32 @@ export default function ProjectsPage() {
 
               <div className="flex items-center space-x-3">
              
+    
                 <a
                   href={frontmatter.repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline"
+                  className="links"
                 >
                   <FaGithub size={18} />
                 </a>
                 {frontmatter.live && (
-                  <a
-                    href={frontmatter.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline flex items-center ml-2"
-                    aria-label="Live demo"
-                  >
-                    <HiExternalLink size={20} />
-                  </a>
+                 <a
+  href={frontmatter.live?.replace(/^"+|"+$/g, "")}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="links"
+  aria-label="Live demo"
+>
+  <HiExternalLink size={20} />
+</a>
+
                 )}
+    
+       </div>
               </div>
             </div>
-          </div>
+        
         ))}
       </div>
     </div>

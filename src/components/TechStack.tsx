@@ -28,7 +28,7 @@ const techStack = [
 const TechStack = () => {
     return (
         <section className="py-10 my-10">
-            <h2 className="text-lg sm:text-xl font-semibold tracking-wider text-white mb-6">
+            <h2 className="text-xl sm:text-xl font-semibold  text-white mb-6">
                 TECH STACK
             </h2>
 
@@ -40,7 +40,7 @@ const TechStack = () => {
              transition duration-200 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-accent/40"
                     >
                         <div className="text-3xl">{tech.icon}</div>
-                        <span className="text-sm text-neutral-300">{tech.name}</span>
+                        <span className="text-md text-[var(--text-color)] font-medium">{tech.name}</span>
                     </div>
 
                 ))}
