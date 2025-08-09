@@ -2,10 +2,13 @@ import { getPostBySlug } from "@/lib/mdx";
 import { notFound } from "next/navigation";
 import { marked } from "marked";
 
-type Props = { params: { slug: string } };
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
 
-export default function TalksPostPage({ params }: Props) {
-  const post = getPostBySlug("talks", params.slug);
+export default async function TalksPostPage({ params }: PageProps) {
+  const { slug } = await params;
+  const post = getPostBySlug("talks", slug);
   if (!post) return notFound();
 
   return (
@@ -14,7 +17,7 @@ export default function TalksPostPage({ params }: Props) {
       <div className="text-sm text-gray-500 mb-4">{post.frontmatter.date}</div>
       <article
         className="prose max-w-none"
-        dangerouslySetInnerHTML={{ __html: marked.parse(post.content) }}
+        dangerouslySetInnerHTML={{ __html: await marked.parse(post.content) }}
       />
     </div>
   );

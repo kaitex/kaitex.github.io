@@ -138,8 +138,6 @@ using Microsoft.AspNetCore.Mvc;
 
 using Microsoft.EntityFrameworkCore;
 
-  
-
 namespace CURDOperation.Controllers
 
 {
@@ -156,8 +154,6 @@ namespace CURDOperation.Controllers
 
         private readonly ApplicationDbContext dbContext;
 
-  
-
         public EmployeeController(ApplicationDbContext dbContext)
 
         {
@@ -165,8 +161,6 @@ namespace CURDOperation.Controllers
             this.dbContext = dbContext;
 
         }
-
-  
 
         [HttpGet]
 
@@ -206,11 +200,7 @@ namespace CURDOperation.Controllers
 
             return Ok(employeeEntitiy);
 
-  
-
         }
-
-  
 
         [HttpGet]
 
@@ -232,8 +222,6 @@ namespace CURDOperation.Controllers
 
             return Ok(employee);
 
-  
-
         }
 
         [HttpDelete("{id:guid}")]
@@ -252,19 +240,12 @@ namespace CURDOperation.Controllers
 
             }
 
-  
-
             dbContext.Employees.Remove(employee);
 
             dbContext.SaveChanges();
 
             return NoContent();
-
-  
-
         }
-
-  
 
         [HttpPut]
 
@@ -273,7 +254,6 @@ namespace CURDOperation.Controllers
         public IActionResult UpadeEmployee(Guid id, UpdateEmployee updateEmployee)
 
         {
-
             var employee = dbContext.Employees.Find(id);
 
             if (employee == null)
@@ -292,8 +272,6 @@ namespace CURDOperation.Controllers
 
             employee.Salary = updateEmployee.Salary;
 
-  
-
             dbContext.SaveChanges();
 
             return Ok(employee);
@@ -301,8 +279,6 @@ namespace CURDOperation.Controllers
         }
 
     }
-
-  
 
 }
 ```

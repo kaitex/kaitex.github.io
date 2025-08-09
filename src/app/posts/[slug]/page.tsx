@@ -5,7 +5,10 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { vs2015 } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 import "../../../styles/markdown.css"
-type Props = { params: { slug: string } };
+
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
 
 // Custom renderer that outputs JSX instead of HTML
 const renderer = {
@@ -31,8 +34,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPostPage({ params }: Props) {
-  const post = getPostBySlug("posts", params.slug);
+export default async function BlogPostPage({ params }: PageProps) {
+  const { slug } = await params;
+  const post = getPostBySlug("posts", slug);
   if (!post) return notFound();
 
   // marked will now return a mix of strings + JSX
