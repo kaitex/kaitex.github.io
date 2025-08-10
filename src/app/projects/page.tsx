@@ -8,7 +8,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="mt-20  max-w-4xl mx-auto  cursor-pointer">
-      <h2 className="text-3xl font-medium mb-4">
+      <h2 className="text-2xl font-medium mb-4">
         Projects<span>.</span>
       </h2>
       <p className="mb-1 text-md md:text-xl">
@@ -39,7 +39,7 @@ export default function ProjectsPage() {
               </span>
 
               <div className="flex items-center space-x-3">
-             
+                <button className="bg-gray-800 text-white rounded px-2 py-0.5 font-semibold select-none">#</button>
     
                 <a
                   href={frontmatter.repo}

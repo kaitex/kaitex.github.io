@@ -1,6 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
- */
- @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
 @import "tailwindcss"; /* Optional if using Tailwind CSS */
 
 /* CSS Variables for themes */
@@ -16,7 +16,7 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
- font-family: "Fira Mono", monospace;
+ font-family: "JetBrains Mono", monospace;
 }
 h1::before,
 h2::before {

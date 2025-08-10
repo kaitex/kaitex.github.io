@@ -40,7 +40,8 @@ export default useGetToken;
 
 ## Explanation
 
-- First, we import `useAuth0` from `@auth0/auth0-react`.
+- First, we import [`useAuth0`](https://google.com)
+ from `@auth0/auth0-react`.
 
 - This is a `.tsx` file and we're using **React hooks**.
 
