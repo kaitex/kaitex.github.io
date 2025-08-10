@@ -1,21 +1,23 @@
 /* Base prose styles */
 .prose-enhanced {
   max-width: none;
-  line-height: 1.8;
+  line-height: 1.4;
   margin-top: 10px;
   font-size: 1rem; /* mobile base */
 }
-
+article > div{
+  margin: 10px 0px;
+}
 /* Headings */
 .prose-enhanced h1 {
   font-size: 1.35rem;   
-  font-weight: normal;
+  font-weight: 400;
   margin-bottom: 1.5rem;
 }
 
 .prose-enhanced h2 {
   font-size: 1rem;     
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 2rem;
   margin-bottom: 1.25rem;
 }
@@ -58,7 +60,6 @@
 
   font-size: 0.95rem;
 }
-
 /* Preformatted blocks */
 .prose-enhanced pre {
   padding: 1rem;
@@ -90,10 +91,10 @@
     padding: 1.5rem;
     font-size: 1.125rem;
   }
-  .prose-enhanced h1 { font-size: 2.25rem; }
-  .prose-enhanced h2 { font-size: 2rem; }
-  .prose-enhanced h3 { font-size: 1.75rem; }
+  .prose-enhanced h1 { font-size: 2rem;  }
+  .prose-enhanced h2 { font-size: 1.3rem; }
+  .prose-enhanced h3 { font-size: 1.1rem; }
   .prose-enhanced blockquote { font-size: 1.125rem; }
   .prose-enhanced pre, 
-  .prose-enhanced code { font-size: 1rem; }
+  .prose-enhanced code { font-size: 1.1rem; }
 }

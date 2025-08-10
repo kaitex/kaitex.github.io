@@ -1,26 +1,26 @@
 ---
-title: "Best Coding Practices for JavaScript & Full-Stack Development
-"
+title: "Best Coding Practices for JavaScript & Full-Stack Development"
 slug: "my-first-blog"
 date: "2025-08-10"
 ---
-# Best Coding Practices for JavaScript & Full-Stack Development
 
-Writing clean and efficient code is crucial for building scalable and maintainable applications. Here are some best practices to follow:
+Writing clean and efficient code is crucial for building scalable and maintainable applications. Here are some best practices to follow: 
 ---
 
 ## 1. Use Descriptive Variable and Function Names
 
-**Bad:**
+Bad:
+
 
 ```js
 let x = 10;
 function foo() {
   return x * 2;
 }
-````
+```
 
-**Good:**
+Good:
+
 
 ```js
 let userAge = 10;
@@ -31,13 +31,13 @@ function doubleAge(age) {
 
 Readable names make your code self-explanatory and easier to maintain.
 
----
+
 
 ## 2. Maintain Consistent Formatting
 
 Use tools like Prettier or ESLint to enforce a consistent coding style. Proper indentation, spacing, and line breaks improve readability and prevent unnecessary errors.
 
----
+
 
 ## 3. Avoid Global Variables
 
@@ -48,7 +48,7 @@ const MAX_USERS = 100; // Constant value
 let currentUsers = 10;
 ```
 
----
+
 
 ## 4. Handle Errors Gracefully
 
@@ -64,7 +64,7 @@ try {
 
 Additionally, always provide meaningful error messages to aid debugging.
 
----
+
 
 ## 5. Optimize Loops and Iterations
 
@@ -76,7 +76,6 @@ const doubled = numbers.map((num) => num * 2);
 console.log(doubled);
 ```
 
----
 
 ## 6. Use Async/Await for Asynchronous Operations
 
@@ -94,8 +93,6 @@ async function fetchData() {
 }
 ```
 
----
-
 ## 7. Keep Backend Code Modular
 
 Split your backend logic into separate modules for better maintainability. Use `require` or `import` statements to manage dependencies.
@@ -112,7 +109,7 @@ router.get("/users", (req, res) => {
 module.exports = router;
 ```
 
----
+
 
 ## 8. Use Environment Variables for Configuration
 
@@ -125,7 +122,7 @@ const apiKey = process.env.API_KEY;
 
 This practice enhances security and allows configuration changes without modifying source code.
 
----
+
 
 ## 9. Use Git Effectively
 
@@ -136,7 +133,6 @@ Version control is essential for tracking changes and collaborating with a team.
 * Perform code reviews before merging changes.
 * Write meaningful commit messages for better history tracking.
 
----
 
 ## 10. Document Your Code Effectively
 
