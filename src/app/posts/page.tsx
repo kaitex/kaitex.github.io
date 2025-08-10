@@ -10,10 +10,9 @@ export default function BlogPage() {
       <ul className="space-y-4">
         {posts.map((post) => (
           <li key={post.frontmatter.slug}>
-            <Link className="text-xl" href={`/posts/${post.frontmatter.slug}`}>
+            <Link className="text-xl flex flex-col md:flex-row" href={`/posts/${post.frontmatter.slug}`}>
             <span className="text-[#a89984]">{post.frontmatter.date}</span> <span>#</span> <span>{post.frontmatter.title}</span>
-              {/* <div className="text-xl font-semibold">{post.frontmatter.title}</div>
-              <div className="text-sm text-gray-500">{post.frontmatter.date}</div> */}
+      
             </Link>
           </li>
         ))}
