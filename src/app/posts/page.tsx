@@ -6,11 +6,11 @@ export default function BlogPage() {
 
   return (
     <div className="mt-20 max-w-4xl mx-auto">
-      <h2 className="text-3xl font-medium mb-4">All Posts<span className="text-[#fe8019]">.</span> </h2>
+      <h2 className=" font-medium mb-4">All Posts<span className="text-[#fe8019]">.</span> </h2>
       <ul className="space-y-4">
         {posts.map((post) => (
           <li key={post.frontmatter.slug}>
-            <Link className="text-md md:text-xl" href={`/posts/${post.frontmatter.slug}`}>
+            <Link className="" href={`/posts/${post.frontmatter.slug}`}>
             <span className="text-[#a89984]">{post.frontmatter.date}</span> <span>#</span> <span>{post.frontmatter.title}</span>
       
             </Link>
