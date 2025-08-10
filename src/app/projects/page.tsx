@@ -11,10 +11,10 @@ export default function ProjectsPage() {
       <h2 className="text-3xl font-medium mb-4">
         Projects<span>.</span>
       </h2>
-      <p className="mb-1 text-xl md:text-2xl">
+      <p className="mb-1 text-md md:text-2xl">
         These are my open source projects which are fetched directly from GitHub.
       </p>
-      <p className="text-xl md:text-2xl">If you're a developer, feel free to make a pull request!</p>
+      <p className="text-md md:text-2xl">If you're a developer, feel free to make a pull request!</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
         {posts.map(({ frontmatter }) => (
