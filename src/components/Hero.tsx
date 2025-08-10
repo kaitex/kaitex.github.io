@@ -17,7 +17,7 @@ export default function Hero() {
     
       <div className="text-center md:text-left">
         <p className="text-3xl font-bold text-[var(--text-color)]">
-          Hey, I'm <span className="text-[var(--text-color)]">Bidur</span>.{" "}
+          Hey, I'm <span className="text-[var(--text-color)]">Kaitex</span>.{" "}
           <span className="text-[var(--text-color)] opacity-80">I'm a Software Developer.</span>
         </p>
 
