@@ -1,13 +1,10 @@
 ---
-title: "My First Blog"
+title: "CRUD Operation for Employee Management"
 slug: "my-first-blog"
 date: "2025-08-06"
 ---
 
 
----
-
-# CRUD Operation for Employee Management
 
 ### Project Documentation
 
