@@ -2,7 +2,7 @@ import { getAllPosts, getPostBySlug } from "@/lib/mdx";
 import { notFound } from "next/navigation";
 import { marked } from "marked";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { vs2015 } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 import "../../../styles/markdown.css";
 
@@ -32,7 +32,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         <SyntaxHighlighter
           key={i}
           language={token.lang || "plaintext"}
-          style={vs2015} // or gruvboxDark
+          style={dracula} // or gruvboxDark
           wrapLines
         >
           {token.text}
