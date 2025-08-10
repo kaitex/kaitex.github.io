@@ -4,17 +4,9 @@ title: "Best Coding Practices for JavaScript & Full-Stack Development
 slug: "my-first-blog"
 date: "2025-08-10"
 ---
-
-# Best Coding Practices for JavaScript & Full-Stack Development
-
-*A comprehensive guide to the best coding practices for modern web development, aimed at improving code quality, maintainability, and performance.*
-
----
-
 # Best Coding Practices for JavaScript & Full-Stack Development
 
 Writing clean and efficient code is crucial for building scalable and maintainable applications. Here are some best practices to follow:
-
 ---
 
 ## 1. Use Descriptive Variable and Function Names
