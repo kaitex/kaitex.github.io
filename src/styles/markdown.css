@@ -1,77 +1,101 @@
 /* Base prose styles */
 .prose-enhanced {
   max-width: none;
-  padding: 1.5rem;
+  padding: 1rem;
   font-family: 'JetBrains Mono', monospace, sans-serif;
   line-height: 1.8;
   margin-top: 10px;
-  font-size: 1.125rem; /* increased from default */
+  font-size: 1rem; /* mobile base */
 }
 
 /* Headings */
 .prose-enhanced h1 {
-  font-size: 2.5rem;   /* bigger */
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
-
-.prose-enhanced h2 {
-  font-size: 2rem;     /* bigger */
-  font-weight: 600;
-  margin-top: 2.5rem;
+  font-size: 2rem;   
+  font-weight: normal;
   margin-bottom: 1.5rem;
 }
 
-.prose-enhanced h3 {
-  font-size: 1.5rem;   /* bigger */
-  font-weight: 500;
+.prose-enhanced h2 {
+  font-size: 1.9rem;     
+  font-weight: 400;
   margin-top: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose-enhanced h3 {
+  font-size: 1.25rem;   
+  font-weight: 500;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
 
 /* Paragraphs */
 .prose-enhanced p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 /* Lists */
 .prose-enhanced ul,
 .prose-enhanced ol {
-  padding-left: 2rem;
-  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 .prose-enhanced li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Blockquote */
 .prose-enhanced blockquote {
   border-left: 4px solid var(--orange);
-  padding-left: 1.25rem;
+  padding-left: 1rem;
   font-style: italic;
-  margin: 1.5rem 0;
-  font-size: 1.125rem;
+  margin: 1.25rem 0;
+  font-size: 1rem;
 }
 
 /* Code */
 .prose-enhanced code {
-  padding: 0.3rem 0.6rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 6px;
-  
   font-family: 'JetBrains Mono', monospace;
-  font-size: 1rem; /* bigger */
+  font-size: 0.95rem;
 }
 
 /* Preformatted blocks */
 .prose-enhanced pre {
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 0.75rem;
   overflow-x: auto;
-  margin: 1.5rem 0;
+  margin: 1.25rem 0;
   color: var(--fg);
-  font-size: 1rem; /* bigger */
+  font-size: 0.95rem;
 }
 .prose-enhanced pre code {
   background-color: transparent;
   padding: 0;
+}
+
+/* Tablet screens */
+@media (min-width: 640px) {
+  .prose-enhanced {
+    padding: 1.25rem;
+    font-size: 1.0625rem;
+  }
+  .prose-enhanced h1 { font-size: 2rem; }
+  .prose-enhanced h2 { font-size: 1.75rem; }
+  .prose-enhanced h3 { font-size: 1.5rem; }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+  .prose-enhanced {
+    padding: 1.5rem;
+    font-size: 1.125rem;
+  }
+  .prose-enhanced h1 { font-size: 2.25rem; }
+  .prose-enhanced h2 { font-size: 2rem; }
+  .prose-enhanced h3 { font-size: 1.75rem; }
+  .prose-enhanced blockquote { font-size: 1.125rem; }
+  .prose-enhanced pre, 
+  .prose-enhanced code { font-size: 1rem; }
 }
