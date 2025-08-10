@@ -2,7 +2,7 @@
 .prose-enhanced {
   max-width: none;
   padding: 1rem;
-  font-family: 'JetBrains Mono', monospace, sans-serif;
+
   line-height: 1.8;
   margin-top: 10px;
   font-size: 1rem; /* mobile base */
@@ -10,14 +10,14 @@
 
 /* Headings */
 .prose-enhanced h1 {
-  font-size: 2rem;   
+  font-size: 1.75rem;   
   font-weight: normal;
   margin-bottom: 1.5rem;
 }
 
 .prose-enhanced h2 {
-  font-size: 1.9rem;     
-  font-weight: 400;
+  font-size: 1.5rem;     
+  font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 1.25rem;
 }
@@ -57,7 +57,7 @@
 .prose-enhanced code {
   padding: 0.25rem 0.5rem;
   border-radius: 6px;
-  font-family: 'JetBrains Mono', monospace;
+
   font-size: 0.95rem;
 }
 
