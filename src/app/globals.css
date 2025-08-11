@@ -62,7 +62,7 @@ nav .links,
 nav .links::after {
   text-decoration: none;
   background: none;
-  position: static;
+
 }
 nav .links::after {
   content: none;
@@ -147,7 +147,7 @@ pre {
 .light nav .links::after {
   text-decoration: none;
   background: none;
-  position: static;
+
 }
 .light nav .links::after {
   content: none;
