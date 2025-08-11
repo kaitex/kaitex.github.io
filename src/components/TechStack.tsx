@@ -16,7 +16,7 @@ import {
 
 const techStack = [
     { name: "React", icon: <FaReact className="text-cyan-400" /> },
-    { name: "Next JS", icon: <SiNextdotjs className="text-white" /> },
+    { name: "Next JS", icon: <SiNextdotjs className="text-black" /> },
     { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
    { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
   { name: "ASP.NET Core", icon: <SiDotnet className="text-purple-500" /> },

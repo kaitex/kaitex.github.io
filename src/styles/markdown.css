@@ -70,8 +70,8 @@ article > div{
   font-size: 0.95rem;
 }
 .prose-enhanced pre code {
-  background-color: transparent;
-  padding: 0;
+  
+  padding: 5;
 }
 
 /* Tablet screens */
