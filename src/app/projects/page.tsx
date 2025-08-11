@@ -2,7 +2,7 @@ import { getAllPosts } from "@/lib/mdx";
 import Link from "next/link";
 import { FaGithub, FaStar, FaCodeBranch, FaBook, FaExternalLinkAlt } from "react-icons/fa";
 import { HiExternalLink } from "react-icons/hi";
-
+import "../../styles/underline.css"
 export default function ProjectsPage() {
   const posts = getAllPosts("projects");
 
@@ -24,7 +24,7 @@ export default function ProjectsPage() {
           >
             <div className="flex items-center mb-2">
             
-              <h3 className="links">{frontmatter.title}</h3>
+              <h3 className="linkWithUnderline">{frontmatter.title}</h3>
             </div>
 
             <p className="text-md mb-4">{frontmatter.description}</p>
@@ -39,13 +39,13 @@ export default function ProjectsPage() {
               </span>
 
               <div className="flex items-center space-x-3">
-                <button className="bg-gray-800 text-white rounded px-2 py-0.5 font-semibold select-none">#</button>
+            
     
                 <a
                   href={frontmatter.repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="links"
+                  className="linkWithUnderline"
                 >
                   <FaGithub size={18} />
                 </a>
@@ -54,7 +54,7 @@ export default function ProjectsPage() {
   href={frontmatter.live?.replace(/^"+|"+$/g, "")}
   target="_blank"
   rel="noopener noreferrer"
-  className="links"
+  className="linkWithUnderline"
   aria-label="Live demo"
 >
   <HiExternalLink size={20} />

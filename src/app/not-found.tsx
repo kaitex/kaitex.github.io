@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
-
+import "../styles/underline.css"
 export default function NotFound() {
   useEffect(() => {
     // Add some interactive elements
@@ -30,7 +30,7 @@ export default function NotFound() {
         <div className="space-y-4">
           <Link
             href="/"
-           className="links "
+           className="linkWithUnderline "
           >
             <p  className="inline-block bg-green-600 text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition-colors duration-200">  Go Home</p>
           
