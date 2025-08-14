@@ -2,15 +2,21 @@
 .prose-enhanced {
   max-width: none;
   line-height:1.6em;
-  margin-top: 10px;
+
   font-size: 15px; /* mobile base */
 }
 article > div{
-  margin: 10px 0px;
+  margin: 15px 0px;
 }
 h1,h2,h3,h4,h5,h6{
   font-size: 1.2rem;
    margin-top: 2em;
+}
+.page-header{
+  font-size: 1.5rem;   
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 1em;
 }
 /* Headings */
 .prose-enhanced h1 {
@@ -20,8 +26,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .prose-enhanced h2 {
-  font-weight: 400;
+  font-weight: 600;
   margin-top: 2rem;
+  line-height: 1.5;
 
 }
 
@@ -34,17 +41,41 @@ h1,h2,h3,h4,h5,h6{
 /* Paragraphs */
 .prose-enhanced p {
 line-height: 1.5;
+font-weight: 400;
+font-size: 18px;
 }
-
+h1::before {
+  content: "# ";
+  color: var(--accent);
+  user-select: none; 
+}
+h2::before {
+  content: '##';
+  color: var(--accent);
+  user-select: none;
+  margin-right: 0.5rem;
+}
+h3::before{
+  content: '###';
+  color: var(--accent);
+  user-select: none;
+  margin-right: 0.5rem;
+}
 /* Lists */
 .prose-enhanced ul,
 .prose-enhanced ol {
   padding-left: 1.5rem;
-
+ 
 }
-.prose-enhanced li {
-
+.prose-enhanced li{
+  font-size: 1rem;
+  list-style:square;
 }
+/* .prose-enhanced li::before{
+  content: "*";
+  color: var(--accent);
+  margin-right : 0.25rem;
+} */
 
 /* Blockquote */
 .prose-enhanced blockquote {
@@ -65,9 +96,11 @@ line-height: 1.4;
 /* Preformatted blocks */
 .prose-enhanced pre {
   padding: 1rem;
+  
   border-radius: 0.75rem;
   overflow-x: auto;
   color: var(--fg);
+  margin: 20px 0px;
   font-size: 15px;
 }
 .prose-enhanced pre code {

@@ -139,7 +139,7 @@ Version control is essential for tracking changes and collaborating with a team.
 Use clear comments and documentation to explain the purpose and functionality of your code.
 
 ```js
-/**
+/ 
  * Calculates the square of a number
  * @param {number} num - The number to square
  * @returns {number} The squared result

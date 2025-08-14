@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useTheme } from "./ThemeContext";
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
-
+import "../styles/underline.css"
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
@@ -40,34 +40,36 @@ export default function Navbar() {
 
   return (
     <nav className="">
-  <div className="mx-auto gap-5 flex flex-col sm:flex-row justify-between items-center">
-    <div className="flex items-center space-x-3">
-      <Link href="/" className="text-xl md:text-2xl font-medium">
-        Kaitex
-      </Link>
-    
-    </div>
-    <div className="flex space-x-6 items-center">
-      <Link href="/posts" className="text-lg hover:opacity-70">
-        Posts
-      </Link>
-      <Link href="/projects" className="text-lg hover:opacity-70">
-        Projects
-      </Link>
-      <Link href="/talks" className="text-lg hover:opacity-70">
-        Talks
-      </Link>
-      <button
-        onClick={cycleTheme}
-        className="p-2 rounded-full"
-        aria-label="Toggle theme"
-        title={`Current theme: ${theme}`}
-      >
-        {getThemeIcon()}
-      </button>
-    </div>
-  </div>
-</nav>
+      <div className="mx-auto gap-5 flex flex-col sm:flex-row justify-between items-center">
+        <div className="flex items-center space-x-3">
+          <Link href="/" className="text-xl md:text-2xl font-medium">
+            Kaitex
+          </Link>
+          <Link className="linkWithUnderline text-lg mt-2" href="https://github.com/kaitex">
+            <FaGithub /></Link>
+             
+        </div>
+        <div className="flex space-x-6 items-center">
+          <Link href="/posts" className="text-lg hover:opacity-70">
+            All Posts
+          </Link>
+          <Link href="/projects" className="text-lg hover:opacity-70">
+            Projects
+          </Link>
+          <Link href="/talks" className="text-lg hover:opacity-70">
+            Talks
+          </Link>
+          <button
+            onClick={cycleTheme}
+            className="p-2 rounded-full"
+            aria-label="Toggle theme"
+            title={`Current theme: ${theme}`}
+          >
+            {getThemeIcon()}
+          </button>
+        </div>
+      </div>
+    </nav>
 
   );
 }

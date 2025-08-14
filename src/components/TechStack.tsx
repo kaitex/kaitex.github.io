@@ -28,9 +28,9 @@ const techStack = [
 const TechStack = () => {
     return (
         <section className="py-10 my-10">
-            <h2 className="text-xl sm:text-xl font-semibold  text-white mb-6">
-                TECH STACK
-            </h2>
+            <div className="text-3xl  font-normal  text-white mb-6">
+              Stack
+            </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {techStack.map((tech) => (

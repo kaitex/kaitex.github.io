@@ -60,11 +60,8 @@ export default function Hero() {
 
     
       <div className="text-center md:text-left">
-        {/* <p className="text-3xl font-bold text-[var(--text-color)]">
-          Hey, I'm <span className="text-[var(--text-color)]">Bidur</span>.{" "}
-          <span className="text-[var(--text-color)] opacity-80">I'm a Software Developer.</span>
-        </p> */}
- <p className="text-3xl mb-2 font-bold text-[var(--text-color)]">
+      
+ <p className="text-3xl mb-2 font-medium text-[var(--text-color)]">
          
     Bidur Majgainya
         </p>
@@ -89,7 +86,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://github.com/bidurmajgainya"
+            href="https://github.com/kaitex"
             className="flex items-center gap-1 hover:underline text-[var(--text-color)] opacity-70"
             target="_blank"
             rel="noopener noreferrer"

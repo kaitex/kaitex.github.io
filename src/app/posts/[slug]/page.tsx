@@ -63,9 +63,9 @@ export default async function BlogPostPage({ params }: PageProps) {
   });
 
   return (
-    <div className="prose-enhanced max-w-4xl  mx-auto p-4">
-      <h1 className="font-medium ">{post.frontmatter.title}</h1>
-      <div className="text-[#999] text-[15px] ">On {post.frontmatter.date}</div>
+    <div className="mt-15 prose-enhanced max-w-4xl  mx-auto ">
+      <div className="page-header">{post.frontmatter.title}</div>
+      <span className="text-[#999] text-[1.5em] ">On {post.frontmatter.date}</span>
       <article >{content}</article>
     </div>
   );

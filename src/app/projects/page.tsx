@@ -8,9 +8,9 @@ export default function ProjectsPage() {
 
   return (
     <div className="mt-15  max-w-4xl mx-auto  cursor-pointer">
-      <h2 className="text-2xl font-medium mb-4">
+      <div className="text-3xl font-medium mb-4">
         Projects<span>.</span>
-      </h2>
+      </div>
       <p className="mb-1 text-[1.2rem]">
         These are my open source projects which are fetched directly from GitHub.
       </p>
@@ -20,11 +20,11 @@ export default function ProjectsPage() {
         {posts.map(({ frontmatter }) => (
           <div
             key={frontmatter.slug}
-            className="border border-gray-700 rounded-md p-4 hover:shadow transition-shadow duration-300"
+            className="border border-gray-700 rounded-md p-5 hover:shadow transition-shadow duration-300"
           >
             <div className="flex items-center mb-2">
 
-              <h3 className="linkWithUnderline text-[1.2rem]">{frontmatter.title}</h3>
+              <h3 className=" text-[1.2rem] mt-0">{frontmatter.title}</h3>
             </div>
 
             <p className="text-[15px] mb-4">{frontmatter.description}</p>
