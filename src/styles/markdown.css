@@ -42,8 +42,8 @@ h1,h2,h3,h4,h5,h6{
 /* Paragraphs */
 .prose-enhanced p {
 line-height: 1.5;
-font-weight: 400;
-font-size: 18px;
+font-weight: 500;
+font-size: 17px;
 }
 h1::before {
   content: "# ";
