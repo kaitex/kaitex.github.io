@@ -51,7 +51,7 @@ export default function Navbar() {
         </div>
         <div className="flex space-x-6 items-center">
           <Link href="/posts" className="text-lg hover:opacity-70">
-            All Posts
+             Posts
           </Link>
           <Link href="/projects" className="text-lg hover:opacity-70">
             Projects
