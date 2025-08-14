@@ -1,6 +1,7 @@
 /* Base prose styles */
 .prose-enhanced {
   max-width: none;
+  line-height:1.6em;
   margin-top: 10px;
   font-size: 1rem; /* mobile base */
 }
