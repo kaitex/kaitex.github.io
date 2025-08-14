@@ -51,7 +51,7 @@ export default function Hero() {
     
         <div className="w-70 rounded-full bg-bg-0 p-[2px]">
           <img
-            src="https://media.licdn.com/dms/image/v2/D5603AQEZy_pvi8kHYg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1688375405093?e=1758153600&v=beta&t=X5LcHQ6G26XOSJBoaQPRkw6AD-2-DKXe6Nd-7y1VQi0"
+            src="https://avatars.githubusercontent.com/u/106853078?v=4"
             alt="Profile"
             className="w-full h-full object-cover rounded-full"
           />
