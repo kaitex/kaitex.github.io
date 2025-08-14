@@ -6,10 +6,11 @@
   font-size: 15px; /* mobile base */
 }
 article > div{
-  margin: 15px 0px;
+  margin: 20px 0px;
 }
 h1,h2,h3,h4,h5,h6{
   font-size: 1.2rem;
+  margin-bottom: 15px;
    margin-top: 2em;
 }
 .page-header{
@@ -26,7 +27,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .prose-enhanced h2 {
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 2rem;
   line-height: 1.5;
 

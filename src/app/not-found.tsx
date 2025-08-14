@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import "../styles/underline.css"
+
 export default function NotFound() {
   useEffect(() => {
     // Add some interactive elements
