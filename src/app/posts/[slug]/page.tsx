@@ -63,10 +63,10 @@ export default async function BlogPostPage({ params }: PageProps) {
   });
 
   return (
-    <div className="prose-enhanced max-w-4xl mx-auto p-4">
+    <div className="prose-enhanced max-w-4xl  mx-auto p-4">
       <h1 className="font-medium ">{post.frontmatter.title}</h1>
-      <div className="text-gray-500 ">{post.frontmatter.date}</div>
-      <article>{content}</article>
+      <div className="text-[#999] text-[15px] ">On {post.frontmatter.date}</div>
+      <article >{content}</article>
     </div>
   );
 }

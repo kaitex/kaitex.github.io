@@ -7,14 +7,14 @@ export default function ProjectsPage() {
   const posts = getAllPosts("projects");
 
   return (
-    <div className="mt-20  max-w-4xl mx-auto  cursor-pointer">
+    <div className="mt-15  max-w-4xl mx-auto  cursor-pointer">
       <h2 className="text-2xl font-medium mb-4">
         Projects<span>.</span>
       </h2>
-      <p className="mb-1 text-md md:text-xl">
+      <p className="mb-1 text-[1.2rem]">
         These are my open source projects which are fetched directly from GitHub.
       </p>
-      <p className="text-md md:text-xl">If you're a developer, feel free to make a pull request!</p>
+      <p className="text-[1.2rem]">If you're a developer, feel free to make a pull request!</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
         {posts.map(({ frontmatter }) => (
@@ -23,11 +23,11 @@ export default function ProjectsPage() {
             className="border border-gray-700 rounded-md p-4 hover:shadow transition-shadow duration-300"
           >
             <div className="flex items-center mb-2">
-            
-              <h3 className="linkWithUnderline">{frontmatter.title}</h3>
+
+              <h3 className="linkWithUnderline text-[1.2rem]">{frontmatter.title}</h3>
             </div>
 
-            <p className="text-md mb-4">{frontmatter.description}</p>
+            <p className="text-[15px] mb-4">{frontmatter.description}</p>
 
             <div className="flex flex-wrap items-center justify-between text-sm gap-2">
               <span className="flex items-center">
@@ -39,8 +39,8 @@ export default function ProjectsPage() {
               </span>
 
               <div className="flex items-center space-x-3">
-            
-    
+
+
                 <a
                   href={frontmatter.repo}
                   target="_blank"
@@ -50,22 +50,22 @@ export default function ProjectsPage() {
                   <FaGithub size={18} />
                 </a>
                 {frontmatter.live && (
-                 <a
-  href={frontmatter.live?.replace(/^"+|"+$/g, "")}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="linkWithUnderline"
-  aria-label="Live demo"
->
-  <HiExternalLink size={20} />
-</a>
+                  <a
+                    href={frontmatter.live?.replace(/^"+|"+$/g, "")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="linkWithUnderline"
+                    aria-label="Live demo"
+                  >
+                    <HiExternalLink size={20} />
+                  </a>
 
                 )}
-    
-       </div>
+
               </div>
             </div>
-        
+          </div>
+
         ))}
       </div>
     </div>

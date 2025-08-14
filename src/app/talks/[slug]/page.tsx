@@ -22,7 +22,7 @@ export default async function TalksPostPage({ params }: PageProps) {
   return (
     <div className="mt-20 mx-auto">
       <h1 className="text-2xl font-bold mb-2">{post.frontmatter.title}</h1>
-      <div className="text-sm text-gray-500 mb-4">{post.frontmatter.date}</div>
+      <div className="text-sm text-[#999] mb-4">{post.frontmatter.date}</div>
       <article
         className="prose max-w-none"
         dangerouslySetInnerHTML={{ __html: await marked.parse(post.content) }}
