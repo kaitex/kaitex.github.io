@@ -3,7 +3,7 @@
   max-width: none;
   line-height:1.6em;
   margin-top: 10px;
-  font-size: 1rem; /* mobile base */
+  font-size: 15px; /* mobile base */
 }
 article > div{
   margin: 10px 0px;
@@ -12,26 +12,26 @@ article > div{
 .prose-enhanced h1 {
   font-size: 1.35rem;   
   font-weight: 400;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5em;
 }
 
 .prose-enhanced h2 {
   font-size: 1rem;     
   font-weight: 400;
   margin-top: 2rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5em;
 }
 
 .prose-enhanced h3 {
   font-size: 0.92rem;   
   font-weight: 500;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5em;
+  margin-bottom: 1.2rem;
 }
 
 /* Paragraphs */
 .prose-enhanced p {
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 }
 
 /* Lists */
@@ -74,7 +74,7 @@ article > div{
   padding: 5;
 }
 
-/* Tablet screens */
+/* Tablet screens 
 @media (min-width: 640px) {
   .prose-enhanced {
     padding: 1.25rem;
@@ -85,7 +85,7 @@ article > div{
   .prose-enhanced h3 { font-size: 1.5rem; }
 }
 
-/* Desktop screens */
+Desktop screens 
 @media (min-width: 1024px) {
   .prose-enhanced {
     padding: 1.5rem;
@@ -98,3 +98,4 @@ article > div{
   .prose-enhanced pre, 
   .prose-enhanced code { font-size: 1.1rem; }
 }
+*/
