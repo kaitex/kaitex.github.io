@@ -6,7 +6,7 @@
 /* CSS Variables for themes */
 :root {
   --text-color: white;
-  --bg-color: #202124;      /* dark background */
+  --bg-color: #121212;      /* dark background */
   --bg-alt: #282828;        /* lighter background for code blocks, etc */
   --accent: #50fa7b;        /* orange accent */
   --border: #3c3836;        /* subtle border */

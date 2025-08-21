@@ -8,8 +8,8 @@
 article > div{
   margin: 20px 0px;
 }
-h1,h2,h3,h4,h5,h6{
-  font-size: 1.2rem;
+h1,h2,h4,h5,h6{
+  font-size: 1.3rem;
   margin-bottom: 15px;
    margin-top: 2em;
 }
@@ -56,12 +56,7 @@ h2::before {
   user-select: none;
   margin-right: 0.5rem;
 }
-h3::before{
-  content: '###';
-  color: var(--accent);
-  user-select: none;
-  margin-right: 0.5rem;
-}
+
 /* Lists */
 .prose-enhanced ul,
 .prose-enhanced ol {

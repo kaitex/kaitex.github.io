@@ -1,6 +1,6 @@
 "use client";
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 import { useState, useEffect } from "react";
 
@@ -47,11 +47,11 @@ export default function Hero() {
   };
 
   return (
-    <section className=" mt-20 flex flex-col md:flex-row items-center gap-10 ">
+    <section className=" mt-20 flex flex-col  items-center gap-10 ">
     
-        <div className="w-70 rounded-full bg-bg-0 p-[2px]">
+        <div className="w-50 rounded-full bg-bg-0 p-[2px]">
           <img
-            src="https://media.licdn.com/dms/image/v2/D5603AQEZy_pvi8kHYg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1688375405093?e=1758153600&v=beta&t=X5LcHQ6G26XOSJBoaQPRkw6AD-2-DKXe6Nd-7y1VQi0"
+            src="https://avatars.githubusercontent.com/u/106853078?v=4" 
             alt="Profile"
             className="w-full h-full object-cover rounded-full"
           />
@@ -59,7 +59,7 @@ export default function Hero() {
       
 
     
-      <div className="text-center md:text-left">
+    <div className="text-center ">
       
  <p className="text-3xl mb-2 font-medium text-[var(--text-color)]">
          
@@ -85,14 +85,13 @@ export default function Hero() {
             <FaLinkedin className="text-[var(--text-color)] opacity-60" /> LinkedIn
           </a>
 
-          <a
-            href="https://github.com/kaitex"
-            className="flex items-center gap-1 hover:underline text-[var(--text-color)] opacity-70"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub className="text-[var(--text-color)] opacity-70" /> GitHub
-          </a>
+        <a
+  href="mailto:majgianyabidur02@gmail.com"
+  className="flex items-center gap-1 hover:underline text-[var(--text-color)] opacity-70"
+>
+  <FaEnvelope className="text-[var(--text-color)] opacity-70" /> Email
+</a>
+
         </div>
       </div>
     </section>
