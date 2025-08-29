@@ -4,7 +4,6 @@
   max-width: none;
   line-height:1.6em;
 
-   /* mobile base */
 }
 article > div{
   margin: 20px 0px;
@@ -44,7 +43,7 @@ h1,h2,h4,h5,h6{
 .prose-enhanced p {
 line-height: 1.5;
 font-weight: 500;
-font-size: 17px;
+font-size: 1rem;
 }
 h1::before {
   content: "# ";
@@ -66,6 +65,7 @@ h2::before {
 }
 .prose-enhanced img{
   margin:10px 0px;
+  width: 100%;
 }
 .prose-enhanced li{
   font-size: 1rem;
@@ -89,19 +89,18 @@ h2::before {
 /* Code */
 .prose-enhanced code {
   padding: 0.25rem 0.5rem;
-
+  font-size: 1rem;
   font-family: "Fira Mono", monospace;
-  border-radius: 6px;
 
-line-height: 1.4;
-
-
-  font-size: 0.95rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: 1.4;
 }
 /* Preformatted blocks */
 .prose-enhanced pre {
   padding: 1rem;
-    font-size: 20rem;
+  font-size: 1rem;
   border-radius: 0.75rem;
   overflow-x: auto;
   /* color: var(--fg); */
