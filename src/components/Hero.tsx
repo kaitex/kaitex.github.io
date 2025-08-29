@@ -10,7 +10,11 @@ export default function Hero() {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const toRotate = ["Full stack developer", "Creating with Code. Small details matter", ".Net Devloper"];
+  const toRotate = [
+    "Full stack developer",
+    "Creating with Code. Small details matter",
+    ".Net Developer",
+  ];
   const period = 1000;
 
   useEffect(() => {
@@ -48,22 +52,17 @@ export default function Hero() {
 
   return (
     <section className=" mt-20 flex flex-col  items-center gap-10 ">
-    
-        <div className="w-50 rounded-full bg-bg-0 p-[2px]">
-          <img
-            src="https://avatars.githubusercontent.com/u/106853078?v=4" 
-            alt="Profile"
-            className="w-full h-full object-cover rounded-full"
-          />
-        </div>
-      
+      <div className="w-50 rounded-full bg-bg-0 p-[2px]">
+        <img
+          src="https://avatars.githubusercontent.com/u/106853078?v=4"
+          alt="Profile"
+          className="w-full h-full object-cover rounded-full"
+        />
+      </div>
 
-    
-    <div className="text-center ">
-      
- <p className="text-3xl mb-2 font-medium text-[var(--text-color)]">
-         
-    Bidur Majgainya
+      <div className="text-center ">
+        <p className="text-3xl mb-2 font-medium text-[var(--text-color)]">
+          Bidur Majgainya
         </p>
         <span className="text-[var(--text-color)] opacity-80 text-sm mt h-5">
           <span className="inline-block border-r-2 border-[var(--text-color)] pr-1 animate-pulse">
@@ -82,16 +81,16 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="text-[var(--text-color)] opacity-60" /> LinkedIn
+            <FaLinkedin className="text-[var(--text-color)] opacity-60" />{" "}
+            LinkedIn
           </a>
 
-        <a
-  href="mailto:majgianyabidur02@gmail.com"
-  className="flex items-center gap-1 hover:underline text-[var(--text-color)] opacity-70"
->
-  <FaEnvelope className="text-[var(--text-color)] opacity-70" /> Email
-</a>
-
+          <a
+            href="mailto:majgianyabidur02@gmail.com"
+            className="flex items-center gap-1 hover:underline text-[var(--text-color)] opacity-70"
+          >
+            <FaEnvelope className="text-[var(--text-color)] opacity-70" /> Email
+          </a>
         </div>
       </div>
     </section>
