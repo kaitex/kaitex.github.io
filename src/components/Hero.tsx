@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="min-h-[70vh] flex items-center">
+    <section className="mt-10 min-h-[70vh] flex items-center">
       <div className="flex flex-col max-w-2xl">
 
         <div className="w-20 h-20 rounded-full overflow-hidden">
@@ -12,7 +12,7 @@ export default function Hero() {
         </div>
 
 
-        <p className="text-4xl mt-5 font-medium text-[var(--text-color)] leading-tight">
+        <p className="text-xl md:text-4xl mt-5 font-medium text-[var(--text-color)] leading-tight">
           Bidur Majgainya
         </p>
 

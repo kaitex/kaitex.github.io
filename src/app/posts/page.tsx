@@ -15,7 +15,7 @@ export default function BlogPage() {
         {posts.map((post) => (
           <li
             key={post.frontmatter.slug}
-            className="flex items-center gap-3 md:flex-row md:gap-5 text-lg"
+            className="flex flex-col items-end md:items-center gap-2 md:flex-row md:gap-5 text-lg"
           >
             <p className="text-[#999]">{post.frontmatter.date}</p>
             <Link
