@@ -33,7 +33,7 @@ export default function NotFound() {
             href="/"
            className="linkWithUnderline "
           >
-            <p  className="inline-block bg-green-600 text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition-colors duration-200">  Go Home</p>
+            <p  className="inline-block bg-transparent border border-[#fe8019] text-xl text-[#fe8019]  px-6 py-3 rounded-md hover:bg-opacity-90 transition-colors duration-200">  Go Home</p>
           
           </Link>
 

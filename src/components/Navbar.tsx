@@ -56,9 +56,7 @@ export default function Navbar() {
           <Link href="/projects" className="text-lg hover:opacity-70">
             Projects
           </Link>
-          <Link href="/talks" className="text-lg hover:opacity-70">
-            Talks
-          </Link>
+      
           <button
             onClick={cycleTheme}
             className="p-2 rounded-full"
