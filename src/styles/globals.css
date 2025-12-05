@@ -165,3 +165,8 @@ pre {
   /* border: 1px solid var(--border); */
 }
 
+@media (min-width: 720px) {
+  html {
+    font-size: 17px;
+  }
+}

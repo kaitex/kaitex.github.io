@@ -7,7 +7,7 @@ export default function BlogPage() {
 
   return (
     <div className="mt-15 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-medium mb-4">
+      <h1 className="text-lg md:text-xl font-medium mb-4">
         All Posts<span className="text-[#fe8019]">.</span>
       </h1>
 

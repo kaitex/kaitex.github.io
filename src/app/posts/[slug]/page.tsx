@@ -105,9 +105,9 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   return (
     <div className="mt-14 px-4 md:px-0">
-      <h1 className="text-[2rem] font-medium mb-4 leading-tight">{post.frontmatter.title}</h1>
+    <span className="font-medium text-md md:text-2xl">{post.frontmatter.title}</span>
 
-      <span className="text-neutral-400 text-[1rem] block mb-10">
+      <span className="text-neutral-400 text-sm md:text-md block mb-10">
         On {post.frontmatter.date}
       </span>
 
