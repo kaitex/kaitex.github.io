@@ -15,15 +15,15 @@ export default function BlogPage() {
         {posts.map((post) => (
           <li
             key={post.frontmatter.slug}
-            className="flex flex-col items-start md:items-center gap-2 md:flex-row md:gap-5 text-lg"
+            className="flex flex-col items-start md:items-center gap-2 md:flex-row md:gap-5 "
           >
-            <p className="text-[#999]">{post.frontmatter.date}</p>
+            <p className="text-[#999] text-sm md:text-md">{post.frontmatter.date}</p>
             <Link
               href={`/posts/${post.frontmatter.slug}`}
               className="linkWithUnderline"
             >
               <span className="text-[var(--accent)]">#</span>{" "}
-              <span className="font-medium">{post.frontmatter.title}</span>
+              <span className="font-medium text-md md:text-lg">{post.frontmatter.title}</span>
             </Link>
           </li>
         ))}

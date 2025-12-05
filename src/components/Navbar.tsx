@@ -50,10 +50,10 @@ export default function Navbar() {
              
         </div>
         <div className="flex space-x-6 items-center">
-          <Link href="/posts" className="text-lg hover:opacity-70">
+          <Link href="/posts" className="text-md md:text-lg hover:opacity-70">
              Posts
           </Link>
-          <Link href="/projects" className="text-lg hover:opacity-70">
+          <Link href="/projects" className="text-md md:text-lg hover:opacity-70">
             Projects
           </Link>
       

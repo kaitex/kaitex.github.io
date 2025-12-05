@@ -111,7 +111,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         On {post.frontmatter.date}
       </span>
 
-      <article className="prose prose-invert max-w-full">{content}</article>
+      <article className="prose prose-invert max-w-full ">{content}</article>
     </div>
   );
 }

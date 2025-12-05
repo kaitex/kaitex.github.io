@@ -31,7 +31,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <link rel="icon" href="../public/globe.svg" sizes="any" />
       </head>
-      <body className="max-w-5xl py-5 mx-auto px-5 sm:px-20">
+      <body className="max-w-5xl py-5 mx-auto px-4 md:px-20">
         <ThemeProvider>
           <Navbar />
           <main>{children}</main>

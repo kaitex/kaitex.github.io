@@ -1,9 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import "tailwindcss"; /* Optional if using Tailwind CSS */
+@import "tailwindcss";
 
-/* CSS Variables for themes */
+
 :root {
   --text-color: #aaaaaa;
   --bg-color: #181818;      /* dark background */  
@@ -14,22 +14,8 @@
 html{
   font-size: 18px;
 }
-@media (min-width: 960px) {
-  html {
-    font-size: 18px;
-  }
-}
-@media (min-width: 720px) {
-  html {
-    font-size: 17px;
-  }
-}
-@media (min-width: 640px) {
-  html {
-    font-size: 16.5px;
-  }
-}
-/* Body and base styles */
+
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -44,11 +30,11 @@ body {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   /* color: white; */
-  margin-top: 0; /* could remove if you want zero margin everywhere */
+  margin-top: 0; 
 }
 /* Links */
 .under, a {
-  /* color: #f0f0f0; */
+ 
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
@@ -85,25 +71,24 @@ nav .links:hover {
   background: none;
 }
 
-/* Blockquotes */
+
 blockquote {
   border-left: 4px solid var(--accent);
   color: #cccccc;
   font-style: italic;
 }
 
-/* Inline code */
+
 code {
 
-/* border: 1px solid #383838; */
 
   font-family: "Fira Mono", monospace;
 }
 
-/* Pre blocks */
+
 pre {
   background: var(--bg-alt);
-  /* border: 1px solid var(--border); */
+
   overflow-x: auto;
   padding: 10px 10px;
  font-family: "Fira Mono", monospace;
@@ -119,7 +104,6 @@ pre {
   --border: #cccccc;
 }
 
-/* Hide next-route-announcer visual artifacts */
 
 
 .light body {
@@ -138,7 +122,7 @@ pre {
   transition: color 0.3s ease;
 }
 
-/* Add underline effect for light mode links - Fixed specificity */
+
 .light a::after,
 .light a::after {
   content: "";
