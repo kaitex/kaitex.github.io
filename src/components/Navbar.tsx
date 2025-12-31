@@ -39,7 +39,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="">
+    <nav className="mb-10">
       <div className="mx-auto gap-5 flex flex-col sm:flex-row justify-between items-center">
         <div className="flex items-center space-x-3">
           <Link href="/" className="text-xl md:text-2xl font-medium">
@@ -47,16 +47,16 @@ export default function Navbar() {
           </Link>
           <Link className="linkWithUnderline text-lg mt-2" href="https://github.com/kaitex">
             <FaGithub /></Link>
-             
+
         </div>
         <div className="flex space-x-6 items-center">
           <Link href="/posts" className="text-md md:text-lg hover:opacity-70">
-             Posts
+            Posts
           </Link>
           <Link href="/projects" className="text-md md:text-lg hover:opacity-70">
             Projects
           </Link>
-      
+
           <button
             onClick={cycleTheme}
             className="p-2 rounded-full"
